@@ -4,3 +4,17 @@
     display: table;
     clear: both;
 }
+
+body {
+    font-family: 'Microsoft Yahei' monospace;
+    min-width: 1226px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w {
+    width: 1226px;
+    margin: 0 auto;
+}

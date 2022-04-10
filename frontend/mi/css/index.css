@@ -1,0 +1,163 @@
+.topbar-wrapper {
+    background-color: #333;
+    height: 40px;
+    line-height: 40px;
+}
+.topbar, .topbar a, .topbar .line {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.topbar a {
+    display: block;
+}
+
+.topbar a:hover {
+    color: #fff;
+}
+
+.topbar .line {
+    font-size: 12px;
+    color: #424242;
+    margin: 0 8px;
+}
+
+.topbar .service {
+    float: left;
+}
+
+.topbar .user-info, .topbar .shop-cart {
+    float: right;
+}
+
+.service li {
+    float: left;
+}
+
+.app {
+    position: relative;
+}
+
+.app-wrapper:hover .app-info,
+.app-wrapper:hover .app::after {
+    display: block;
+    height: 148px;
+}
+
+.app::after {
+    content: '';
+    display: block;
+    border: 8px solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+
+.app-info {
+    background-color: #fff;
+    box-shadow:  0 0 10px rgba(0, 0, 0, .3);
+    width: 124px;
+    height: 0;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    left: -36px;
+    transition: height 0.3s;
+}
+.app-info img {
+    width: 90px;
+    margin: 17px;
+    margin-bottom: 14px;
+}
+.app-info span {
+    color: #000;
+    font-size: 14px;
+}
+
+.user-info li, .service li {
+    float: left;
+}
+
+.shop-cart {
+    margin-left: 25px;
+    position: relative;
+}
+.shop-cart a{
+    display: block;
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+}
+.shop-cart i {
+    margin-right: 2px;
+}
+.shop-cart:hover a{
+    color: #ff6700;
+    background-color: #fff;
+}
+.shop-cart:hover .cart-box {
+    height: 100px;
+}
+
+.cart-box {
+    width: 276px;
+    height: 0;
+    line-height: 1;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: -5px 5px 10px -4px rgba(0, 0, 0, .3), 5px 5px 10px -4px rgba(0, 0, 0, .3);
+    position: absolute;
+    right: 0;
+    color: #424242;
+    transition: height .3s;
+}
+.msg-empty {
+    display: block;
+    margin-top: 44px;
+}
+
+.header {
+    height: 100px;
+}
+.header .logo {
+    float: left;
+    margin-top: 22px;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    text-indent: -999px;
+}
+.header .logo a {
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: #ff6f00;
+    background-position: center;
+    transition: left 0.3s;
+    left: 0;
+    top: 0;
+}
+.header .logo .mi {
+    background-image: url('../img/mi-logo.png');
+}
+.header .logo .home {
+    left: -55px;
+    background-image: url('../img/mi-home.png');
+}
+.header .logo:hover .mi {
+    left: 55px;
+}
+.header .logo:hover .home {
+    left: 0px;
+}
