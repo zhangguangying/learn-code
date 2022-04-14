@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: silver;
+        }
+        .box2{
+            background-color: orange;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            top: 50%;
+        }
+        .box3, .box4 {
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            float: left;
+            margin: 0 10px;
+            transition: all .3s;
+        }
+        .box3:hover, .box4:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <span class="box2">aaa</span>
+    </div>
+
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>
